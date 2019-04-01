@@ -9,10 +9,10 @@ const {
 	GraphQLSchema
 } = require('graphql');
 
-// Launch Type
+// Defining Launch Type
 const LaunchType = new GraphQLObjectType({
   name: 'Launch',
-  fields: () => ({
+  fields: () => ({ 
     flight_number: { type: GraphQLInt  },
     mission_name: { type: GraphQLString  },
     launch_year: { type: GraphQLString  },
@@ -22,7 +22,7 @@ const LaunchType = new GraphQLObjectType({
   }),
 });
 
-// Rocket Type
+// Defininf Rocket Type
 const RocketType = new GraphQLObjectType({
   name: 'Rocket',
   fields: () => ({
