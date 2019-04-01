@@ -12,7 +12,7 @@ import logo from './spaceX.png';
 // Creating a client and passing 
 // the GraphQL endpoint to uri
 const client = new ApolloClient({
-  uri: 'http://localhost:5000/graphql'
+  uri: '/graphql'
 });
 
 class App extends Component {
